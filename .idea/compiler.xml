@@ -6,15 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spingsvr" />
         <module name="spt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spingsvr" target="1.8" />
       <module name="spt" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spingsvr" options="-parameters" />
       <module name="spt" options="-parameters" />
     </option>
   </component>
